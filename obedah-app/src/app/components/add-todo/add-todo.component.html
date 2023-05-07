@@ -1,0 +1,13 @@
+<form (ngSubmit)="AddTodo()">
+    <input class="form-control" placeholder="Type Your Task"
+    [(ngModel)]="text"
+    name="text"
+    />
+    <br/>
+    <p>
+      {{text}}
+    </p>
+    <button class="btn btn-primary btn-sm " type="submit">Add</button>
+
+
+</form>

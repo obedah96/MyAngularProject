@@ -1,0 +1,13 @@
+
+    <app-onetodo
+     *ngFor="let todo of Todos"
+      (toggleEvent)="toggleTodo($event)"
+      (deleteEvent)="deleteTodo($event)"
+      [todo]="todo">
+
+    </app-onetodo>
+
+    <app-add-todo
+      (AddTodoEvent)="AddTodo($event)">
+    </app-add-todo>
+
